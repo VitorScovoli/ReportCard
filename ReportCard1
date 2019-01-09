@@ -1,0 +1,40 @@
+package com.example.android.reportcard;
+
+public class ReportCard {
+
+    private int mGrade1;
+    private int mGrade2;
+    private int mSchoolYear;
+
+    public ReportCard(int grade1, int grade2, int schoolYear){
+        mGrade1 = grade1;
+        mGrade2 = grade2;
+        mSchoolYear = schoolYear;
+    }
+
+    public int getmGrade1() {
+        return mGrade1;
+    }
+    public int getmGrade2() {
+        return mGrade2;
+    }
+    public int getmSchoolYear() {
+        return mSchoolYear;
+    }
+
+    public void setmGrade1(int mGrade1) {
+        this.mGrade1 = mGrade1;
+    }
+    public void setmGrade2(int mGrade2) {
+        this.mGrade2 = mGrade2;
+    }
+    public void setmSchoolYear(int mSchoolYear) {
+        this.mSchoolYear = mSchoolYear;
+    }
+
+    @Override
+    public String toString() {
+        return "The student grades are " + mGrade1 + " and " + mGrade2 +
+                " and the school year is " + mSchoolYear;
+    }
+}
